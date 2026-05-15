@@ -9,7 +9,8 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  process.env.CLIENT_URL,
+   "http://localhost:3000",
+  "https://team-task-manager-3-eqpm.onrender.com",
   credentials: true
 }));
 app.use(express.json());
