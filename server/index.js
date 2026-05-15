@@ -9,8 +9,7 @@ const app = express();
 
 // Middleware
 const allowedOrigins = [
-  "http://localhost:3000",
-  "https://team-task-manager-3-eqpm.onrender.com"
+   origin: process.env.CLIENT_URL
 ];
 
 app.use(cors({
